@@ -87,6 +87,9 @@ The script will display the MAE metric and will save the predictions in ```outpu
 A metric calculation script is also provided in ```outputs/predictions``` that takes a file in the format saved by this script and
 computes the metrics.
 
+## ACM Reference Format
+> Mridul Gupta, Hariprasad Kodamana, and Sayan Ranu. 2023. Frigate: Frugal Spatio-temporal Forecasting on Road Networks. _In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD ’23), August 6–10, 2023, Long Beach, CA, USA_. ACM, New York, NY, USA, 12 pages. https://doi.org/10.1145/3580305.3599357
+
 ### Bibtex
 ```tex
 @inproceedings{FrigateGNN,
