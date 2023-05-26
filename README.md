@@ -86,3 +86,19 @@ bash run_test.sh 0
 The script will display the MAE metric and will save the predictions in ```outputs/predictions/run_<run_number>/pred_true.npz```.
 A metric calculation script is also provided in ```outputs/predictions``` that takes a file in the format saved by this script and
 computes the metrics.
+
+### Bibtex
+```tex
+@inproceedings{FrigateGNN,
+author = {Gupta, Mridul and Kodamana, Hariprasad and Ranu, Sayan},
+title = {Frigate: Frugal Spatio-temporal Forecasting on Road Networks},
+booktitle = {Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '23)},
+location = {Long Beach, CA, USA},
+publisher = {ACM},
+address = {New York, NY, USA},
+numpages = {12},
+urls = {https://doi.org/10.1145/3580305.3599357},
+year = {2023},
+doi = {10.1134/3580305.3599357},
+}
+```
