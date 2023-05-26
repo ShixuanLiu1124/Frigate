@@ -1,5 +1,5 @@
 # Frigate: Frugal Spatio-temporal Forecasting on Road Networks
-This repository is the official implementaion of **Frigate: Frugal Spatio-temporal Forecasting on Road Networks**
+This repository is the official implementaion of [**Frigate: Frugal Spatio-temporal Forecasting on Road Networks**](https://doi.org/10.1145/3580305.3599357)
 
 ## Requirements
 This code has been tested under two configurations:  
