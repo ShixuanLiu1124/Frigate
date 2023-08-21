@@ -8,7 +8,7 @@ from torch_geometric.nn.conv import MessagePassing
 
 class FrigateConv(MessagePassing):
     def __init__(this, in_channels, out_channels):
-        super(CustomConv, this).__init__(aggr='add')
+        super(FrigateConv, this).__init__(aggr='add')
         this.lin = nn.Linear(in_channels, out_channels)
         this.lin_r = nn.Linear(in_channels, out_channels)
         this.lin_rout = nn.Linear(out_channels, out_channels)
@@ -50,10 +50,10 @@ class GNN(nn.Module):
         super().__init__()
         this.nlayers = nlayers
         this.gc = nn.ModuleList()
-        this.gc.append(CustomConv(input_dim, hidden_dim))
+        this.gc.append(FrigateConv(input_dim, hidden_dim))
         for _ in range(this.nlayers - 2):
-            this.gc.append(CustomConv(hidden_dim, hidden_dim))
-        this.gc.append(CustomConv(hidden_dim, output_dim))
+            this.gc.append(FrigateConv(hidden_dim, hidden_dim))
+        this.gc.append(FrigateConv(hidden_dim, output_dim))
         this.gs_sum = gnn.SAGEConv(1, 1, root_weight=False)
         this.reset_param(this.gs_sum)
         this.freezer(this.gs_sum)
